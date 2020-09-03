@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css悬浮效果</title>
+    <style>
+        .container {
+            width: 260px;
+            height: 460px;
+            background: rgba(0, 0, 0, .1);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            transform: rotate(-28deg) skew(25deg) scale(0.8);
+            transition: .5s all linear; 
+        }
+
+        .container img {
+            position: absolute;
+            left: 0;
+            transition:.5s;
+            box-shadow: .1px .1px .1px 1px #eee;
+
+        }
+
+        .container:hover img:nth-child(5) {
+            transform-origin: center;
+            transform: translate(200px, -200px); 
+            opacity: .9;
+            box-shadow: .1px .1px 10px 1px #eee;
+            
+        }
+
+        .container:hover img:nth-child(4) {
+            transform-origin: center;
+            transform: translate(160px, -160px); 
+            opacity: .7;
+        }
+
+        .container:hover img:nth-child(3) {
+            transform-origin: center;
+            transform: translate(120px, -120px); 
+            opacity: .5;
+        }
+
+        .container:hover img:nth-child(2) {
+            transform-origin: center;
+            transform: translate(80px, -80px); 
+            opacity: .3;
+        }
+
+        .container:hover img:nth-child(1) {
+            transform-origin: center;
+            transform: translate(40px, -40px); 
+            opacity: .2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <img width="100%"
+            src="http://hbimg.huabanimg.com/343e4d41a182cf091986d057d05608c7eefe144b16da0-GZ6nMc_fw658/format/webp" alt="">
+        <img width="100%"
+            src="http://hbimg.huabanimg.com/343e4d41a182cf091986d057d05608c7eefe144b16da0-GZ6nMc_fw658/format/webp" alt="">
+        <img width="100%"
+            src="http://hbimg.huabanimg.com/343e4d41a182cf091986d057d05608c7eefe144b16da0-GZ6nMc_fw658/format/webp" alt="">
+        <img width="100%"
+            src="http://hbimg.huabanimg.com/343e4d41a182cf091986d057d05608c7eefe144b16da0-GZ6nMc_fw658/format/webp" alt="">
+        <img width="100%"
+            src="http://hbimg.huabanimg.com/343e4d41a182cf091986d057d05608c7eefe144b16da0-GZ6nMc_fw658/format/webp" alt="">
+    </div>
+</body>
+
+</html>
